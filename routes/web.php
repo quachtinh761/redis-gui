@@ -11,7 +11,16 @@
 |
 */
 
-use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'RedisController@index');
+Route::get('/', 'ConnectionController@index')->name('connection.get');
+
+
+Route::group([
+    'prefix' => 'connect',
+], function () {
+    Route::get('/', 'RedisController@index')->name('redis.get');
+    Route::post('/add', 'RedisController@add')->name('redis.add');
+    Route::post('/delete', 'RedisController@delete')->name('redis.delete');
+});
+

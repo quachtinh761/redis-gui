@@ -1,12 +1,23 @@
 {
-    "name": "laravel/laravel",
+    "name": "quachtinh761/redis-gui",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Redis GUI",
     "keywords": [
-        "framework",
-        "laravel"
+        "redis GUI",
+        "redis",
+        "redis tolls"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "email": "quachtinh761@gmail.com",
+            "name": "Tinh Nguyen"
+        },
+        {
+            "email": "vothidaiguong@gmail.com",
+            "name": "Vo Thi Dai Guong"
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
